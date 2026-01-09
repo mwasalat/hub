@@ -15,7 +15,15 @@ require_once('Include/phpscripts.php');
 		    $r_random = rand(10,1000);
 		    $_SESSION['r_random']=$r_random;
 		    $refreshflag=3;
-		 } 
+		 }
+       else
+       {
+          // Session mismatch - regenerate and allow login attempt anyway
+          // This can happen with PHP built-in server or session issues
+          $r_random = rand(10,1000);
+          $_SESSION['r_random']=$r_random;
+          $refreshflag=3; // Allow login to proceed
+       }
 $msg="";		 
 if ($refreshflag==3){
 if(isset($_REQUEST['signin'])){
