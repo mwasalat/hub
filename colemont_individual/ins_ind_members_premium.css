@@ -1,0 +1,176 @@
+#tabs ul li {
+  list-style:none; 
+ }
+ 
+ #tabs ul li a {
+  display: block;
+     float: left;
+     height: 37px;
+     background: #3060A5;
+     text-align: center;
+     padding: 7px 30px 0 30px;
+     position: relative;
+     margin: 0 36px 0 0;
+     font-family: "Open Sans", Helvetica, Arial, sans-serif;
+     font-size: 16px;
+     text-decoration: none;
+     color: #fff;
+     cursor: pointer;
+ }
+ 
+ #tabs ul li a:hover{
+   background: #5172B8; 
+ }
+ 
+ #tabs ul li a:after {
+     content: "";
+     border-top: 20px solid transparent;
+     border-bottom: 17px solid transparent;
+     border-left: 31px solid #3060A5;
+     position: absolute;
+     right: -30px;
+     top: 0;
+ }
+ 
+ #tabs ul li a:before {
+     content: "";
+     position: absolute;
+     margin-top: -7px;
+     border-width: 18px 0 19px 30px;
+     border-style: solid;
+     border-color: #3060A5 #3060A5 #3060A5 transparent;
+     left: -29px;  
+ }
+ 
+ /* Hover Effects */
+ #tabs ul li a:hover::before {
+   border-color: #5172B8 #5172B8 #5172B8 transparent;
+  
+ }
+ /* Hover Effects */
+ #tabs ul li a:hover::after{
+     border-top: 20px solid transparent;
+     border-bottom: 17px solid transparent;
+ border-left: 30px solid #5172B8; 
+ }
+ 
+ /* Hide the Before Pseudo Element */
+ #tabs ul li:first-child a:before {
+  display: none;
+ }
+
+ /* /// Seceand css */
+
+ 
+ /* Add Border Radius */
+ /* #tabs ul li:first-child a{
+  border-top-left-radius: 10px; border-bottom-left-radius: 10px;border-bottom-right-radius: 1px;
+ } */
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{
+  background-color:  transparent !important;
+  border: none !important;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+  border: none !important;
+
+}
+/* .findBtn {
+  border-radius: 11px;
+  background: linear-gradient(0deg, #335d87, #335d87);
+  color: #fff;
+  width: 250px;
+  font-weight: 600;
+  /* box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25); */
+
+.findBtn {
+  border-radius: 11px;
+  background: linear-gradient(0deg, #335d87, #335d87);
+  color: #fff;
+  width: 250px;
+  font-weight: 600;
+  border: none !important;
+
+  /* box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25); */
+  transition: background 0.3s, color 0.3s; /* Adding a smooth transition effect */
+}
+
+.findBtn:hover {
+  background: linear-gradient(0deg, #234567, #234567); /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
+  /* Add any additional styles for hover state */
+  border: none !important;
+}
+.findBtn.btn:focus:focus{
+ color: wheat !important;
+}
+
+
+.planBtn {
+  border-radius: 11px;
+  background: linear-gradient(0deg, #335d87, #335d87);
+  color: #fff;
+  width: 180px;
+  font-weight: 600;
+  border: none !important;
+
+  /* box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25); */
+  transition: background 0.3s, color 0.3s; /* Adding a smooth transition effect */
+}
+
+.planBtn:hover {
+  background: linear-gradient(0deg, #234567, #234567); /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
+  /* Add any additional styles for hover state */
+  border: none !important;
+  width: 180px;
+}
+.planBtn.btn:focus:focus{
+ color: wheat !important;
+}
+
+.nextBtn {
+  border-radius: 11px;
+  background: linear-gradient(0deg, #335d87, #335d87);
+  color: #fff;
+  width: 250px;
+  font-weight: 600;
+  border: none !important;
+
+  /* box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25); */
+  transition: background 0.3s, color 0.3s; /* Adding a smooth transition effect */
+}
+
+.nextBtn:hover {
+  background: linear-gradient(0deg, #234567, #234567); /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
+  /* Add any additional styles for hover state */
+  border: none !important;
+}
+.nextBtn.btn:focus:focus{
+ color: wheat !important;
+}
+.user-removeBtn {
+  border-radius: 11px;
+  background: linear-gradient(0deg, #335d87, #335d87);
+  color: #fff;
+  width: 250px;
+  font-weight: 600;
+  /* box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25); */
+}
+.user-removeBtn1 {
+  border-radius: 11px;
+  background: linear-gradient(0deg, #335d87, #335d87);
+  color: #fff;
+  width: 250px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  /* box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25); */
+}
+.tit-member{
+  font-size: 27px;
+  font-family: sans-serif
+}
+.leb-size{
+color: #817979 !important;
+font-weight: 100px !important;
+}

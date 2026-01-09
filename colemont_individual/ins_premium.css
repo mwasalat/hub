@@ -1,0 +1,60 @@
+
+ #tabs-ui > ul:first-child > li {
+  list-style: none;
+  float: left;
+  margin: 0 36px 0 0;
+}
+
+#tabs-ui > ul:first-child > li a {
+  display: block;
+  height: 36px;
+  background: #3060A5;
+  text-align: center;
+  padding: 7px 30px 0 30px;
+  position: relative;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  margin-top: -1px;
+}
+
+#tabs-ui > ul:first-child > li a:hover {
+  background: #5172B8;
+}
+
+#tabs-ui > ul:first-child > li a:after,
+#tabs-ui > ul:first-child > li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+}
+
+#tabs-ui > ul:first-child > li a:after {
+  right: -30px;
+  border-top: 20px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 31px solid #3060A5;
+}
+
+#tabs-ui > ul:first-child > li a:before {
+  left: -29px;
+  border-width: 18px 0 19px 30px;
+  border-style: solid;
+  border-color: #3060A5 #3060A5 #3060A5 transparent;
+}
+
+#tabs-ui > ul:first-child > li:first-child a:before {
+  display: none;
+}
+
+#tabs-ui > ul:first-child > li a:hover::before {
+  border-color: #5172B8 #5172B8 #5172B8 transparent;
+}
+
+#tabs-ui > ul:first-child > li a:hover::after {
+  border-top: 20px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 30px solid #5172B8;
+}
